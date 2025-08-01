@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get_flow_kit/config/routes/app_router.dart';
-import 'package:get_flow_kit/config/translation/app_translation.dart';
 import 'package:get_flow_kit/global_binding.dart';
 import 'package:get_storage/get_storage.dart';
+
+import 'config/config.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -18,8 +18,9 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       translations: AppTranslation(),
-      getPages: AppRouter.pages,
       initialBinding: GlobalBinding(),
+      initialRoute: AppRoutes.home,
+      getPages: AppRouter.pages,
     );
   }
 }

@@ -1,5 +1,5 @@
-import 'package:get_flow_kit/core/base_exception.dart';
-import 'package:get_flow_kit/core/result.dart';
+import '../exceptions/base_exception.dart';
+import '../result.dart';
 
 /// Result 패턴의 유틸리티 메서드를 제공하는 확장
 ///

@@ -1,4 +1,4 @@
-import 'package:get_flow_kit/core/mixins/validator/types/password_valid_type.dart';
+import 'types/password_valid_type.dart';
 
 mixin ValidatorMixin {
   bool isValidCreditCardNumber(String creditCardNumber) {

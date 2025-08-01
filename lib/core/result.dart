@@ -1,4 +1,4 @@
-import 'package:get_flow_kit/core/base_exception.dart';
+import 'exceptions/base_exception.dart';
 
 sealed class Result<T, E extends BaseException> {
   const Result();
